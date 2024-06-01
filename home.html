@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Zone Homepage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h2 class="logo">Class XF</h2>
+        <nav class="navigation">
+            <a href="home.html" class="active">Home</a>
+            <a href="dp.html">Design Process</a>
+            <a href="games.html">Product</a>
+    </header>
+
+    <section class="parallax">
+        <img src="background.png" id="background">
+        <img src="layer2.png" id="layer2">
+        <img src="slidekanan.png" id="slidekanan">
+        <img src="slidekiri.png" id="slidekiri">
+        <h2 id="text"><center>ᑕᖇᗴᗩ丅Ꭵᐯᗴ<br>乙ᗝᑎᗴ</center></h2>
+        <img src="rumputtetangga.png" id="rumputtetangga">
+    </section>
+
+    <section class="sec">
+        <h2><center>---------------------------------------------------------------
+            <br>Meet Our Team!<br>
+            ---------------------------------------------------------------</center><br><br></h2>
+    </section>
+
+  <div class="wrapper">
+
+        <div class="card_Container">
+
+            <div class="card">
+
+                <div class="imbBx">
+                    <img src="about us/mememe.jpg" alt="">
+                </div>
+
+                <div class="content">
+                    <div class="contentBx">
+                        <h3>29. Putu Andini Dewi K.<br><span>Web Developer</span></h3>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="imbBx">
+                    <img src="about us/ndol.jpg" alt="">
+                </div>
+
+                <div class="content">
+                    <div class="contentBx">
+                        <h3>30. Rachel Sena N. N.<br><span>Web Designer</span></h3>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="imbBx">
+                    <img src="about us/al.jpg" alt="">
+                </div>
+
+                <div class="content">
+                    <div class="contentBx">
+                        <h3>19. Muhammad Al Khautsar W.<br><span>App Developer</span></h3>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="imbBx">
+                    <img src="about us/lena.jpg" alt="">
+                </div>
+
+                <div class="content">
+                    <div class="contentBx">
+                        <h3>13. Kalena Ramadhany A. N.<br><span>Script Writer</span></h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <section class="far">
+        <h2><center><br><br><br></center></h2>
+    </section>
+
+    <div class="wrapper">
+        <div class="container">
+            <input type="radio" name="slide" id="c1" checked>
+            <label for="c1" class="card">
+                <div class="row">
+                    <div class="icon">1</div>
+                    <div class="description">
+                        <h2>ʀᴇꜰᴇʀᴇɴᴄᴇꜱ :</h2>
+                        <a href="https://www.niagahoster.co.id/blog/web-developer/">ƈʅιƈƙ ԋҽɾҽ</a>
+                    </div>
+                </div>
+            </label>
+            <input type="radio" name="slide" id="c2" >
+            <label for="c2" class="card">
+                <div class="row">
+                    <div class="icon">2</div>
+                    <div class="description">
+                        <h2>ʀᴇꜰᴇʀᴇɴᴄᴇꜱ :</h2>
+                        <a href="https://www.niagahoster.co.id/blog/web-designer/">ƈʅιƈƙ ԋҽɾҽ</a>
+                    </div>
+                </div>
+            </label>
+            <input type="radio" name="slide" id="c3" >
+            <label for="c3" class="card">
+                <div class="row">
+                    <div class="icon">3</div>
+                    <div class="description">
+                        <h2>ʀᴇꜰᴇʀᴇɴᴄᴇꜱ :</h2>
+                        <a href="https://glints.com/id/lowongan/application-developer-adalah/">ƈʅιƈƙ ԋҽɾҽ</a>
+                    </div>
+                </div>
+            </label>
+            <input type="radio" name="slide" id="c4" >
+            <label for="c4" class="card">
+                <div class="row">
+                    <div class="icon">4</div>
+                    <div class="description">
+                        <h2>ʀᴇꜰᴇʀᴇɴᴄᴇꜱ :</h2>
+                        <a href="https://www.quipper.com/id/blog/quipper-campus/career/p-mengenal-profesi-script-writer">ƈʅιƈƙ ԋҽɾҽ</a>
+                    </div>
+                </div>
+            </label>
+        </div>
+    </div>
+
+    <script>
+        let text = document.getElementById('text');
+        let layer2 = document.getElementById('layer2');
+        let slidekanan = document.getElementById('slidekanan');
+        let slidekiri = document.getElementById('slidekiri');
+        
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            
+            text.style.marginTop = value * 2.5 + 'px';
+            layer2.style.top = value * -0.3 + 'px';
+            slidekanan.style.left = value * 0.25 + 'px';
+            slidekiri.style.left = value * -0.25 + 'px';
+        });
+    </script>
+
+<footer>
+    <p>&copy; 2024 Creative Zone. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
